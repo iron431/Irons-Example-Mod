@@ -1,0 +1,1 @@
+This is an example of how to use Iron's Spells N Spellbooks as a dev dependency
