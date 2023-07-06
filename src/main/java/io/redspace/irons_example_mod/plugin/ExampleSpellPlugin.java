@@ -1,6 +1,7 @@
 package io.redspace.irons_example_mod.plugin;
 
 import io.redspace.irons_example_mod.IronsExampleMod;
+import io.redspace.irons_example_mod.spells.SuperHealSpell;
 import io.redspace.ironsspellbooks.api.IIronsSpellbooksPlugin;
 import io.redspace.ironsspellbooks.api.IronsSpellbooksPlugin;
 import io.redspace.ironsspellbooks.api.registration.ISpellRegistration;
