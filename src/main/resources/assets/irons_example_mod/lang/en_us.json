@@ -2,5 +2,7 @@
   "spell.irons_example_mod.super_heal": "Super Heal",
   "spell.irons_example_mod.super_heal.guide": "Cast to heal yourself.",
 
-  "ui.irons_example_mod.healing": "%d Healing"
+  "ui.irons_example_mod.healing": "%d Healing",
+
+  "item.irons_example_mod.example_magic_sword": "Example Magic Sword"
 }

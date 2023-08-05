@@ -1,7 +1,7 @@
 package io.redspace.irons_example_mod.spells;
 
 import io.redspace.irons_example_mod.IronsExampleMod;
-import io.redspace.ironsspellbooks.api.DefaultConfig;
+import io.redspace.ironsspellbooks.api.config.DefaultConfig;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.AnimationHolder;
