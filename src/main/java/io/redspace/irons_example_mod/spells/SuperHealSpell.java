@@ -37,7 +37,7 @@ public class SuperHealSpell extends AbstractSpell {
 
     private final DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.RARE)
-            .setSchool(SchoolType.BLOOD)
+            .setSchool(SchoolType.HOLY)
             .setMaxLevel(10)
             .setCooldownSeconds(20)
             .build();
