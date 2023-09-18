@@ -2,7 +2,7 @@ package io.redspace.irons_example_mod;
 
 import com.mojang.logging.LogUtils;
 import io.redspace.irons_example_mod.registry.ItemRegistry;
-import io.redspace.irons_example_mod.registry.SpellRegistry;
+import io.redspace.irons_example_mod.registry.ExampleSpellRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -23,7 +23,7 @@ public class IronsExampleMod {
     public IronsExampleMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
-        SpellRegistry.register(modEventBus);
+        ExampleSpellRegistry.register(modEventBus);
         ItemRegistry.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }

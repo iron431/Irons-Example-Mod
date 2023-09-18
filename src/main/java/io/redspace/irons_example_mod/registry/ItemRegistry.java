@@ -16,6 +16,6 @@ public class ItemRegistry {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> EXAMPLE_MAGIC_SWORD = ITEMS.register("example_magic_sword", () -> new ExampleMagicSword(new SpellDataRegistryHolder(SpellRegistry.SUPER_HEAL_SPELL, 1)));
+    public static final RegistryObject<Item> EXAMPLE_MAGIC_SWORD = ITEMS.register("example_magic_sword", () -> new ExampleMagicSword(new SpellDataRegistryHolder(ExampleSpellRegistry.SUPER_HEAL_SPELL, 1)));
 
 }
