@@ -97,30 +97,45 @@ dependencies {
     runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:${irons_spells_version}")
 
     // GECKOLIB ***************************************************************************************************
-    runtimeOnly fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
 
     // CAELUS *****************************************************************************************************
+    compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}:api")
     runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
 
     // PLAYER ANIMATOR ********************************************************************************************
-    runtimeOnly fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
-
-    // CURIOS *****************************************************************************************************
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+    implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
 
     // TETRA ******************************************************************************************************
-    //runtimeOnly fg.deobf("se.mickelus.mutil:mutil:${mutil_version}")
+    compileOnly fg.deobf("se.mickelus.mutil:mutil:${mutil_version}")
+    compileOnly fg.deobf("curse.maven:tetra-${tetra_version}")
+    // If you want to run with tetra in dev comment the above line and uncomment the following 2 lines
     //runtimeOnly fg.deobf("curse.maven:tetra-${tetra_version}")
+    //implementation fg.deobf("se.mickelus.mutil:mutil:${mutil_version}")
 
     // JEI ********************************************************************************************************
-    //runtimeOnly fg.deobf("mezz.jei:jei-${jei_mc_version}-forge:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${jei_mc_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${jei_mc_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${jei_mc_version}-forge:${jei_version}")
+
+    // CURIOS *****************************************************************************************************
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
+    //Uncomment the following line to run with Curios in dev
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+
+    // BETTER COMBAT **********************************************************************************************
+    //runtimeOnly fg.deobf("curse.maven:better-combat-by-daedelus-${better_combat_version}")
+    //runtimeOnly fg.deobf("curse.maven:cloth-config-348521:4633416")
 
     // PATCHOULI **************************************************************************************************
-    //runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${patchouli_version}")
 
     // APOTHEOSIS
-    //runtimeOnly fg.deobf("curse.maven:placebo-283644:4546960")
-    //runtimeOnly fg.deobf("curse.maven:apotheosis-313970:4547399")
+    compileOnly fg.deobf("curse.maven:apotheosis-${apotheosis_version}")
+    runtimeOnly fg.deobf("curse.maven:apotheosis-${apotheosis_version}")
+    runtimeOnly fg.deobf("curse.maven:placebo-${placebo_version}")
+    runtimeOnly fg.deobf("curse.maven:attributeslib-${attributeslib_version}")
 
     // JSON ******************************************************************************************************
     implementation "com.google.code.gson:gson:${gson_version}"
