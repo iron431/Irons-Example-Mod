@@ -69,10 +69,11 @@ public class SuperHealSpell extends AbstractSpell {
     }
 
     @Override
-    public void onCast(Level world, int spellLevel, LivingEntity entity, MagicData playerMagicData) {
+    public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
         entity.heal(getSpellPower(spellLevel, entity));
-        super.onCast(world, spellLevel, entity, playerMagicData);
+        super.onCast(level, spellLevel, entity, castSource, playerMagicData);
     }
+
 
     @Override
     public AnimationHolder getCastStartAnimation() {
