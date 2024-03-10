@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public class ExampleMagicSword extends MagicSwordItem {
-    public ExampleMagicSword(SpellDataRegistryHolder holder) {
+    public ExampleMagicSword(SpellDataRegistryHolder[] holder) {
         super(Tiers.DIAMOND, 6, -2.4f, holder,
                 Map.of(
                         AttributeRegistry.COOLDOWN_REDUCTION.get(), new AttributeModifier(UUID.fromString("212b5a66-2b43-4c18-ab05-6de0cc4d64d3"), "Weapon Modifier", .15, AttributeModifier.Operation.MULTIPLY_BASE)
